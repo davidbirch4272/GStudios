@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import Sidebar from '../components/Sidebar'
+import Sidebar from '../components/fucker'
 import Footer from '../components/Footer'
 
 function MyApp({ Component, pageProps }) {
