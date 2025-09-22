@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -35,8 +37,142 @@ a {
   text-decoration: none;
 }
 
+li {
+ 
+  margin-top: 12px;
+  transition: all 300ms ease;
+  
+}
+
+li:hover {
+color: red;
+transform: translateY(-2px);
+
+}
+
+header {
+text-align: left;
+padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 12px;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+  margin-bottom: 0;
+}
+
+.talent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+p {
+  width: 75%;
+  text-align: start;
+  margin: 12px auto;
+}
+
+.plain-list li {
+  transition: none;
+  color: inherit;  
+}
+
+.plain-list li:hover {
+  color: inherit;
+  transform: none;
+}
+
+.form__shell {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 1rem;
+    }
+
+.form__item {
+    margin-bottom: 8px;
+
+}
+
+.form__submit {
+    background-color: #f06449;
+    border: 2px solid #f06449;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    max-width: 240px;
+    padding: 12px 24px;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+
+.form__submit:hover {
+    border-color:   #fff;
+    background-color: blue;
+}
+
+.form__submit:active {
+    border-color: #f06449;
+    color: #f06449;
+
+}
+
+
+input, textarea {
+    width: 100%;
+    background-color: white;
+    color: black;
+    outline: none;
+    border: 3px solid #c0c4cc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 40px;
+    transition: all 300ms ease;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+    
+}
+
+.label {
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+input:hover, textarea:hover {
+    border-color: blue; 
+
+}
+
+input:focus, textarea:focus {
+    border-color: #f06449;
+}
+
+@media (max-width: 420px) {
+  .form__shell {
+    min-width: auto; 
+  }
+}
+
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
+

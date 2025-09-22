@@ -1,0 +1,56 @@
+import NextImage from "next/image";
+import Link from "next/link";
+
+export default function NewsEvents() {
+  return (
+    <>
+      <div style={{ padding: "24px 32px 20px 16px" }}>
+        <header style={{ textAlign: "center", padding: 0 }}>
+          <NextImage
+            src="/NewsEvents1.png"
+            alt="Mission"
+            width={475}
+            height={120}
+            priority
+            style={{
+              width: "100%",
+              maxWidth: "475px",
+              height: "127px",
+              objectFit: "cover",
+              display: "block",
+              margin: "0 auto",
+            }}
+          />
+        </header>
+      </div>
+
+      <hr style={{ border: "1px solid #ccc", margin: "10px 0" }} />
+
+      <main>
+        <h1>News and Events!</h1>
+        <p>
+          The G Studios is a collective of artists with skills and interests
+          that run the spectrum. We seek to meet and learn from new artists from
+          all across the country, and world. We often have events involving
+          music, resident artist showings, workshops, and anything else you
+          could think up. Please check here frequently for updates on upcoming
+          events and showings! The G Studios is currently looking for new
+          contributing artists. If you would like to propose an idea for a show
+          or participate in upcoming events, please submit your information{" "}
+        <Link 
+        href="/ContactUsSubmitWork"
+        style={{ color: "blue", textDecoration: "underline" }}
+        >
+        here
+        </Link>.
+        </p>
+        <h1>The G Studios Welcomes A New Studio Assistant</h1>
+        <p>
+          We have a new Studio Assistant! Hannah Pitkin, photographer and
+          painter, is helping The G Studios on its continuous mission to improve
+          and support Dorchester arts. Welcome !
+        </p>
+      </main>
+    </>
+  );
+}
