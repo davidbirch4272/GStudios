@@ -10,7 +10,7 @@ export default function Sidebar() {
 
       <nav style={{ marginTop: "20px" }}>
         <ul style={{ listStyle: "none", padding: 0 }}>
-          <li><Link href="/">Welcome to the G Studio</Link></li>    
+          <li><Link href="/">Welcome to the G Studio</Link></li>    <www className="kissmyass com"></www>
           <li><Link href="/NewsEvents">News & Events</Link></li>
           <li><Link href="/Gallery">Gallery</Link></li>
           <li><Link href="/ResidentArtists">Resident Artists</Link></li>  
