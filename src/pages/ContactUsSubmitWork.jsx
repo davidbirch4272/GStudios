@@ -1,32 +1,32 @@
-import React, { useRef} from "react"
+import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import NextImage from "next/image";
 
 export default function ContactUsSubmitWork() {
+  const form = useRef();
 
-const form = useRef();
+  const contact = (event) => {
+    event.preventDefault();
 
-const contact = (event) => {
- event.preventDefault();
-
- emailjs
-   .sendForm(
-       'service_q1whm4r',     //This must be dealt with.  You must figure out why this isn't working. 
-       'template_lx9aayq',     
-       form.current,
-       'FQVdGdKf9tXQ6_M7X'     
-  )
-  .then(() => {
-    alert("Message sent successfully!");
-    form.current.reset();
-  })  
-  .catch (() => {
+    emailjs
+      .sendForm(
+        "service_q1whm4r", //This must be dealt with.  You must figure out why this isn't working.
+        "template_lx9aayq",
+        form.current,
+        "FQVdGdKf9tXQ6_M7X"
+      )
+      .then(() => {
+        alert("Message sent successfully!");
+        form.current.reset();
+      })
+      .catch((error) => {
+        console.error("EmailJS Error:", error);
+        alert("Error: " + JSON.stringify(error));
         alert(
-     "The email service is temporarily unavailable.  Please contact me directly on thegstudios1@gmail.com"   
-    );
-    });
-   };
-
+          "The email service is temporarily unavailable.  Please contact me directly on thegstudios1@gmail.com"
+        );
+      });
+  };
 
   return (
     <>
@@ -61,7 +61,7 @@ const contact = (event) => {
           of your work. NOTICE: For the time being, please send said information
           to gstudios1@gmail.com
         </p>
-      
+
         <h1>Email us by filling the form out below</h1>
         <div className="form__shell">
           <form ref={form} onSubmit={contact} className="contact__form">
