@@ -10,10 +10,10 @@ export default function ContactUsSubmitWork() {
 
     emailjs
       .sendForm(
-        "service_q1whm4r", 
+        "service_q1whm4r",
         "template_lx9aayq",
         form.current,
-        "FQVdGdKf9tXQ6_M7X",
+        "FQVdGdKf9tXQ6_M7X"
       )
       .then(() => {
         alert("Message sent successfully!");
@@ -29,7 +29,7 @@ export default function ContactUsSubmitWork() {
 
   return (
     <>
-     <div
+      <div
         style={{
           position: "relative",
           width: "120%",
@@ -48,7 +48,7 @@ export default function ContactUsSubmitWork() {
           }}
         />
       </div>
-      
+
       <hr style={{ border: "1px solid #ccc", margin: "2px 0" }} />
 
       <main>
@@ -57,7 +57,8 @@ export default function ContactUsSubmitWork() {
           The G Studios is always looking for new contributing artists. If you
           would like to propose an idea for a show or participate in upcoming
           events, please submit your name, phone number, and a short description
-          of your work. 
+          of your work. If you need help from Entes or Entes Restoring and
+          Improvement or anything else please feel free to send a message.
         </p>
 
         <h1>Email us by filling the form out below</h1>
