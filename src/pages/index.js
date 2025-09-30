@@ -2,43 +2,44 @@ import NextImage from "next/image";
 
 export default function OurMission() {
   return (
+    //Lets try this again....This is where things get fucked up...
     <>
-      <div style={{ padding: "24px 32px 20px 16px" }}>
-        <header style={{ textAlign: "center", padding: 0 }}>
-          <NextImage
-            src="/Mission1.png"
-            alt="Mission"
-            width={475}
-            height={120}
-            priority
-            style={{
-              width: "100%",
-              maxWidth: "475px",
-              height: "127px",
-              objectFit: "cover",
-              display: "block",
-              margin: "0 auto", 
-            }}
-          />
-        </header>
+      <div
+        style={{
+          position: "relative",
+          width: "120%",
+          maxWidth: "500px",
+          aspectRatio: "20 / 11",
+          margin: "0 auto",
+        }}
+      >
+        <NextImage
+          src="/Mission1.png"
+          alt="Mission"
+          priority
+          fill
+          style={{
+            objectFit: "contain",
+          }}
+        />
       </div>
-      
-      <hr style={{ border: "1px solid #ccc", margin: "10px 0" }} />
+
+      <hr style={{ border: "1px solid #ccc", margin: "1px 0" }} />
 
       <main>
         <h1>Our Mission</h1>
-          <div style={{ marginBottom: "12px" }}>
-            <NextImage
-              src="/MissionContent1.png"
-              alt="Mission"
-              width={500}
-              height={150}
-              style={{
-                display: "block",
-                margin: "0 auto",
-              }}
-            />
-          </div>
+        <div style={{ marginBottom: "12px" }}>
+          <NextImage
+            src="/MissionContent1.png"
+            alt="Mission"
+            width={500}
+            height={150}
+            style={{
+              display: "block",
+              margin: "0 auto",
+            }}
+          />
+        </div>
 
         <h1>Uniting Local Artists</h1>
         <p>

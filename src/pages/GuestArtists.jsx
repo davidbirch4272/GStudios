@@ -3,27 +3,27 @@ import NextImage from "next/image";
 export default function GuestArtists() {
   return (
     <>
-      <div style={{ padding: "24px 32px 20px 16px" }}>
-        <header style={{ textAlign: "center", padding: 0 }}>
-          <NextImage
-            src="/GuestArtist1.png"
-            alt="Mission"
-            width={475}
-            height={120}
-            priority
-            style={{
-              width: "100%",
-              maxWidth: "475px",
-              height: "127px",
-              objectFit: "cover",
-              display: "block",
-              margin: "0 auto",
-            }}
-          />
-        </header>
+      <div
+        style={{
+          position: "relative",
+          width: "120%",
+          maxWidth: "500px",
+          aspectRatio: "20 / 11",
+          margin: "0 auto",
+        }}
+      >
+        <NextImage
+          src="/GuestArtist1.png"
+          alt="Mission"
+          priority
+          fill
+          style={{
+            objectFit: "contain",
+          }}
+        />
       </div>
 
-      <hr style={{ border: "1px solid #ccc", margin: "10px 0" }} />
+      <hr style={{ border: "1px solid #ccc", margin: "2px 0" }} />
 
       <main>
         <h1>Guest Artists</h1>

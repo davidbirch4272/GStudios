@@ -29,27 +29,27 @@ export default function ContactUsSubmitWork() {
 
   return (
     <>
-      <div style={{ padding: "24px 32px 20px 16px" }}>
-        <header style={{ textAlign: "center", padding: 0 }}>
-          <NextImage
-            src="/ContactSubmitWork1.png"
-            alt="Mission"
-            width={475}
-            height={120}
-            priority
-            style={{
-              width: "100%",
-              maxWidth: "475px",
-              height: "127px",
-              objectFit: "cover",
-              display: "block",
-              margin: "0 auto",
-            }}
-          />
-        </header>
+     <div
+        style={{
+          position: "relative",
+          width: "120%",
+          maxWidth: "500px",
+          aspectRatio: "20 / 11",
+          margin: "0 auto",
+        }}
+      >
+        <NextImage
+          src="/ContactSubmitWork1.png"
+          alt="Mission"
+          priority
+          fill
+          style={{
+            objectFit: "contain",
+          }}
+        />
       </div>
-
-      <hr style={{ border: "1px solid #ccc", margin: "10px 0" }} />
+      
+      <hr style={{ border: "1px solid #ccc", margin: "2px 0" }} />
 
       <main>
         <h1>Contact Us / Submit Work</h1>
@@ -57,8 +57,7 @@ export default function ContactUsSubmitWork() {
           The G Studios is always looking for new contributing artists. If you
           would like to propose an idea for a show or participate in upcoming
           events, please submit your name, phone number, and a short description
-          of your work. NOTICE: For the time being, please send said information
-          to gstudios1@gmail.com
+          of your work. 
         </p>
 
         <h1>Email us by filling the form out below</h1>

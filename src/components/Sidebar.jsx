@@ -3,10 +3,20 @@ import NextImage from "next/image";
 
 export default function Sidebar() {
   return (
-    <div style={{ width: "200px", background: "#eee", padding: "20px" }}>
-     <Link href="/"><NextImage src="/logo.png" alt="Logo" width={150} height={150} /></Link> 
+    <div style={{ width: "200px", background: "#eee", padding: "20px"}}>
+     <Link href="/">
+     <img 
+     src="/logo.png" 
+     alt="Logo" 
+     style={{ 
+     width: "100%", 
+     height: "255px",    
+     display: "block",
+     objectFit: "contain"
+     }}
+     /></Link> 
 
-      <hr style={{ border: "1px solid #ccc", margin: "10px 0" }} />
+      <hr style={{ border: "1px solid #ccc", marginTop: "2px", marginBottom: "2px" }} />
 
       <nav style={{ marginTop: "20px" }}>
         <ul style={{ listStyle: "none", padding: 0 }}>
