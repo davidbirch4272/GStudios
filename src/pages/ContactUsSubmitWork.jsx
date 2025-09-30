@@ -10,10 +10,10 @@ export default function ContactUsSubmitWork() {
 
     emailjs
       .sendForm(
-        "service_q1whm4r", //This must be dealt with.  You must figure out why this isn't working.
+        "service_q1whm4r", 
         "template_lx9aayq",
         form.current,
-        "FQVdGdKf9tXQ6_M7X"
+        "FQVdGdKf9tXQ6_M7X",
       )
       .then(() => {
         alert("Message sent successfully!");
@@ -21,7 +21,6 @@ export default function ContactUsSubmitWork() {
       })
       .catch((error) => {
         console.error("EmailJS Error:", error);
-        alert("Error: " + JSON.stringify(error));
         alert(
           "The email service is temporarily unavailable.  Please contact me directly on thegstudios1@gmail.com"
         );
