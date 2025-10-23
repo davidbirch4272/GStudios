@@ -2,15 +2,16 @@ import NextImage from "next/image";
 
 export default function OurMission() {
   return (
-    //Lets try this again....This is where things get fucked up...
-    <>
+       <>
       <div
         style={{
           position: "relative",
-          width: "120%",
+          width: "100%",
           maxWidth: "500px",
           aspectRatio: "20 / 11",
           margin: "0 auto",
+          padding: "0 12px",
+          overflow: "hidden",
         }}
       >
         <NextImage

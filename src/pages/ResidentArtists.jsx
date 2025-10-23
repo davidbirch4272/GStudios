@@ -7,7 +7,7 @@ export default function ResidentArtists() {
       <div
         style={{
           position: "relative",
-          width: "120%",
+          width: "100%",
           maxWidth: "500px",
           aspectRatio: "20 / 11",
           margin: "0 auto",

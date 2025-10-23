@@ -3,7 +3,13 @@ import NextImage from "next/image";
 
 export default function Sidebar() {
   return (
-    <div style={{ width: "200px", background: "#eee", padding: "20px"}}>
+    <div 
+    style={{ 
+      width: "200px", 
+      background: "#eee", 
+      padding: "20px",
+      marginRight: "8px",
+      }}>
      <Link href="/">
      <img 
      src="/logo.png" 
